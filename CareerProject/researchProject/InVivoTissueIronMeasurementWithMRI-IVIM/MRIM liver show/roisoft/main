@@ -1,8 +1,0 @@
-
-image = '4766838_T2star_Pancreas_3.png';
-DCM = '/home/image/mfile_w/test_roi/PANCREAS_T2/IM-0046-0001.dcm';
-
-
-cropimg = detectRoi(image);
-ROIpng = detectColor(cropimg);
-ratioDCM(ROIpng,DCM);
