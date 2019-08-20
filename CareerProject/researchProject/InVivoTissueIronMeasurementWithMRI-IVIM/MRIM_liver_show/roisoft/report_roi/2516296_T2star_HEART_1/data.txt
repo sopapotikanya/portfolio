@@ -1,0 +1,14 @@
+number of voxel before resize: 720
+number of voxel after resize: 81
+number of voxel before resize with edge: 1204
+number of voxel after resize with edge: 139
+ratio: 3
+ratio with edge: 3
+img coordinate w1(x,y): 204 236
+img coordinate w2(x,y): 447 263
+img coordinate h1(x,y): 420 198
+img coordinate h2(x,y): 452 243
+dcm coordinate w1(x,y): 79 117
+dcm coordinate w2(x,y): 160 125
+dcm coordinate h1(x,y): 151 103
+dcm coordinate h2(x,y): 162 119
