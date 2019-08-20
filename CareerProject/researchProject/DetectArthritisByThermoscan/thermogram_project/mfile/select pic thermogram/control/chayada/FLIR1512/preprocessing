@@ -1,0 +1,18 @@
+I = FLIR1512./(max(max(FLIR1512)));
+imshow(I)
+
+
+Imax=max(max(I));
+
+Imin=min(min(I));
+range = Imax-Imin;
+
+mmin=ones(size(I))*Imin;
+Inew = I-mmin;
+imshow(Inew);
+Inew2=Inew/range;
+
+
+
+figure, imshow(Inew2);
+figure, imhist(Inew2);

@@ -1,0 +1,23 @@
+function [Iout]=mark(I,x,y,status,state)
+
+if(state==1)
+if(status==1)
+I(x-5:x+5,y-1ก0:y+10,1)=0;
+I(x-10:x+10,y-10:y+10,3)=0;
+I(x-10:x+10,y-10:y+10,2)=255;
+elseif(status==2)
+I(x-10:x+10,y-10:y+10,1)=255;   
+I(x-10:x+10,y-10:y+10,2)=0;  
+I(x-10:x+10,y-10:y+10,3)=0;  
+end
+elseif(state==2)
+if(status==1)
+I(x-10:x+10,y-10:y+10,1)=0;
+I(x-10:x+10,y-10:y+10,3)=0;
+elseif(status==2)
+I(x-10:x+10,y-10:y+10,2)=0;  
+I(x-10:x+10,y-10:y+10,3)=0;  
+end
+end
+Iout=I;
+end
